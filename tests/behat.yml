@@ -1,0 +1,10 @@
+default:
+  extensions:
+    SensioLabs\Behat\PageObjectExtension: ~
+    Behat\MinkExtension:
+      base_url: 'http://google.com/'
+      default_session: selenium2
+      browser_name: 'chrome'
+      selenium2:
+        wd_host: 'http://10.0.2.2:4444/wd/hub'
+        capabilities: { "browser": "chrome" }
